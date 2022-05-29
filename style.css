@@ -1,0 +1,1149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+    animation: animate 30s ease-in-out infinite;
+}
+@keyframes animate{
+    0%,100%{
+        background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/back5.jpeg);
+    }
+    25%{
+        background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/back2.jpeg);
+    }
+    50%{
+        background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/back1.jpeg);
+    }
+    75%{
+        background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/back3.jpeg);
+    }
+
+}
+
+.navbar img{
+    width:100px;
+}
+.navbar{
+   width: 85%;
+   margin:auto;
+   padding: 35px 0;
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.navbar ul li{
+    list-style:none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li::after{
+    content: '';
+    height:3px;
+    width: 0;
+    background: #e2d170;
+    position: absolute;
+    left:0;
+    bottom:-10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width:100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:white;
+}
+.content h1{
+    font-size: 45px;
+    margin-top: 80px;
+    color: #fff;
+    font-family: Lucida , cursive;
+}
+.content p{
+    margin: 30px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 20px;
+}
+button{
+    width:200px;
+    padding:15px 0;
+    text-align: center;
+    margin: 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #e2d170;
+    background: transparent;
+    color: white;
+    cursor:pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #e2d170;
+    height: 100%;
+    width:0;
+    border-radius: 25px;
+    position: absolute;
+    left:0;
+    bottom:0;
+    z-index:-1;
+    transition:0.5s;
+}
+button:hover span{
+    width: 100%;
+
+}
+button:hover{
+    border:none;
+}
+/*------ differnt types of exercises -------*/
+.row{
+    margin-top:5%;
+    display:flex;
+    justify-content: space-between;
+}
+.differntbooks{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.differntbooks h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: Lucida , cursive;
+}
+.differntbooks p{
+    color:rgb(19,2,2);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    font-family: 'Brush Script MT', cursive;
+}
+.diff-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.diff-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.layer:hover{
+    background: rgba(160, 116, 156, 0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom:49%;
+    opacity: 1;
+}
+h3{
+    text-align:center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+/*---------Facilities------*/
+.facilities{
+    width: 80%;
+    margin:auto;
+    text-align:center;
+    padding-top: 100px;
+}
+.facilities h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: Lucida , cursive;
+}
+.facilities p{
+    color: rgb(19,2,2);
+    font-size: 20px;
+    font-weight: 300px;
+    line-height: 22px;
+    padding: 10px;
+}
+.facilities-col{
+    flex-basis: 31%;
+    background: #d8d4bb;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.facilities-col p{
+    padding: 0;
+}
+.facilities-col h3{
+   margin-top:16px;
+   margin-bottom: 15px;
+   text-align: center;
+}
+/*-------- call to action ------*/
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/yoback2.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+    font-family: Lucida , cursive;
+}
+.hero-btn{
+    display:inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #86c6d1;
+    background: #86c6d1;
+    transition: 1s;
+}
+/*---------Footer--------*/
+.foot{
+   width: 100%;
+   text-align: center;
+   padding: 30px 0; 
+}
+.foot h1{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.fa-facebook{
+    color: #47313d;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-instagram{
+    color: #47313d;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-twitter{
+    color: #47313d;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-linkedin{
+    color: #47313d;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-telegram{
+    color: #47313d;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart{
+    color: #f44336;
+}
+
+/*------Exercise page--------*/
+.sub-main{
+    height: 55vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/yoback1.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-main h1{
+    margin-top: 100px;
+    color: #fff;
+    font-family: Lucida , cursive;
+}
+/*----------Exercises--------*/
+.head h1{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    font-family: Lucida , cursive;
+}
+.grid{
+    margin:80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    align-items: center;
+}
+.grid > article{
+    background: #eee5e9;
+    border: none;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    text-align: center;
+    width: 400px;
+    transition: transform .3s;
+}
+.grid > article:hover{
+    transform: translateY(5px);
+    box-shadow: 2px 2px 26px 0px rgba(0,0,0,0.3);
+}
+.grid > article video{
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.text{
+    padding: 0 50px 50px;
+}
+.text h3{
+    text-transform: uppercase;
+}
+.pra-button{
+    background-color: #b17598;
+    border: none;
+    padding: 1em;
+    border-radius: 10px;
+    font-weight: bold;
+}
+/*-------YOUTUBE VIDEO----------*/
+.ball h1{
+    margin: 30px;
+    text-align: center;
+    font-family: Lucida , cursive;
+    font-size: 25px;
+}
+/*-------Practice home page------*/
+.pra-main{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/practice.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.cont{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:white;
+}
+.cont h1{
+    font-size: 50px;
+    margin-top: 80px;
+    color: #fff;
+    font-family: Lucida , cursive;
+}
+.cont p{
+    margin: 20px auto;
+    font-weight: 50;
+    line-height: 25px;
+    font-size: 15px;
+    font-family: 'Yellowtail', cursive;
+}
+/*--------Practice even--------*/
+.con{
+    min-height: 100vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(#fff,#e9cece);
+}
+.left{
+    width: 30%;
+    height: 600px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/b1.jpeg);
+    border-radius: 8px;
+}
+.right{
+    width: 50%;
+    min-height: 400px;
+    background: radial-gradient(#fff,rgb(199, 230, 230));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    color: black;
+    margin: -200px;
+    transition: transform .3s;
+}
+.right:hover{
+    transform: translateY(5px);
+    box-shadow: 2px 2px 26px 0px rgba(0,0,0,0.3);
+    background: rgb(93, 124, 129);
+    color: #fff;
+}
+.right h1{
+    font-size: 40px;
+    font-weight: lighter;
+    text-align: center;
+    font-family: Lucida , cursive;
+}
+.right p{
+    margin: 20px 0;
+    font-size: 20px;
+}
+/*-----Practice odd------*/
+.front{
+    min-height: 100vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(#fff,rgb(199, 230, 230));
+}
+.le{
+    width: 30%;
+    height: 600px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/b1.jpeg);
+    border-radius: 8px;
+}
+.ri{
+    width: 50%;
+    min-height: 400px;
+    background: radial-gradient(#fff,#e9cece);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    color: black;
+    margin: -200px;
+    transition: transform .3s;
+}
+.ri:hover{
+    transform: translateY(5px);
+    box-shadow: 2px 2px 26px 0px rgba(0,0,0,0.3);
+    background: rgb(85, 84, 110);
+    color: #fff;
+}
+.ri h1{
+    font-size: 40px;
+    font-weight: lighter;
+    text-align: center;
+    font-family: Lucida , cursive;
+}
+.ri p{
+    margin: 20px 0;
+    font-size: 20px;
+}
+/*--------Yoga page---------*/
+.sub-in{
+    height: 55vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/yogaback.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-in h1{
+    margin-top: 100px;
+    color: #fff;
+    font-family: Lucida , cursive;
+}
+/*---------Beginners yoga-------*/
+.min-cont{
+    width: 100%;
+    height: 100%;
+}
+.min-cont h1{
+    color: #333;
+    text-align: center;
+    margin: 100px auto 50px;
+    font-family: Lucida , cursive;
+}
+.first{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sec{
+   flex-basis: 30%;
+   overflow: hidden; 
+}
+.card{
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    perspective: 100px;
+    cursor: pointer;
+}
+.inner-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    transform-style: preserve-3d;
+}
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+.card-front{
+    background-position: center;
+    background-size: cover;
+}
+.front-1{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Images/tadab.jpeg);
+}
+.front-2{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Images/treeposeb.jpeg);
+}
+.front-3{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Images/trifront.jpeg);
+}
+.card-front h4{
+    display: inline-block;
+    width: 100px;
+    padding: 14px 30px;
+    margin-top: 230px;
+    border-radius: 30px;
+    background: #fff;
+    color: #333;
+    transition: transform 1s;
+
+}
+.card-back{
+    background: #1c1f54;
+    transform: rotateX(180deg);
+}
+.card:hover .inner-box{
+    transform: rotateX(-180deg);
+}
+.card:hover h4{
+    transform: translateY(140px);
+}
+.card-back h3{
+    display: inline-block;
+    color: #fff;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    margin-top: 50px;
+}
+.card-back p{
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 20px 20px;
+    font-size: 15px;
+}
+/*---------next 3 poses---------*/
+.rin{
+    margin: 100px auto 50px;
+}
+.first-1{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sec-1{
+   flex-basis: 30%;
+   overflow: hidden; 
+}
+.card-1{
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    perspective: 100px;
+    cursor: pointer;
+}
+.inner-box-1{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    transform-style: preserve-3d;
+}
+.card-fro, .card-ba{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+.card-fro{
+    background-position: center;
+    background-size: cover;
+}
+.second-1{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Images/dan.jpeg);
+}
+.second-2{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Images/childfront.jpeg);
+}
+.second-3{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Images/savafront.jpeg);
+}
+.card-fro h4{
+    display: inline-block;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 35px;
+    margin-top: 230px;
+    border-radius: 35px;
+    background: #fff;
+    color: #333;
+    transition: transform 1s;
+}
+.card-fro h5{
+    display: inline-block;
+    width: 100px;
+    margin-top: 230px;
+    border-radius: 35px;
+    background: #fff;
+    color: #333;
+    transition: transform 1s;
+    padding: 14px 30px;
+    font-size: 15px;
+}
+.card-ba{
+    background: #1c1f54;
+    transform: rotateX(180deg);
+}
+.card-1:hover .inner-box-1{
+    transform: rotateX(-180deg);
+}
+.card-1:hover h4{
+    transform: translateY(140px);
+}
+.card-ba h3{
+    display: inline-block;
+    color: #fff;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    margin-top: 50px;
+}
+.card-ba p{
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 20px 20px;
+    font-size: 15px;
+}
+/*-------call to action in yoga-------*/
+.call{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/flower.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.call h1{
+    font-size: 35px;
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+    font-family: garamond, serif;
+}
+/*------what is yoga--------*/
+.yomain h1{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    font-family: Lucida , cursive;
+}
+.yomain p{
+    text-align: center;
+    margin: 20px;
+    font-size: 35px;
+    font-family: 'Brush Script MT', cursive;
+}
+.box-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.single-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    border-radius: 4px;
+    background-color: #94c06b;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition: .3s;
+}
+.img-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 6px solid #ddd;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 20px;
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+}
+.single-box:nth-child(1) .img-area{
+    background-image: url(images/1.jpeg);
+}
+.single-box:nth-child(2) .img-area{
+    background-image: url(images/2.jpeg);
+}
+.single-box:nth-child(3) .img-area{
+    background-image: url(images/3.jpeg);
+}
+.img-text h2{
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Lucida , cursive;
+}
+.img-text p{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.single-box:hover{
+    background: black;
+    color: #fff;
+}
+/*------other 3 tips-----*/
+.boxarea{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.singlebox{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    border-radius: 4px;
+    background-color: #94c06b;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition: .3s;
+}
+.imgarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 6px solid #ddd;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 20px;
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+}
+.singlebox:nth-child(1) .imgarea{
+    background-image: url(images/4.jpeg);
+}
+.singlebox:nth-child(2) .imgarea{
+    background-image: url(images/5.jpeg);
+}
+.singlebox:nth-child(3) .imgarea{
+    background-image: url(images/6.jpeg);
+}
+.imgtext h2{
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Lucida , cursive;
+}
+.imgtext p{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.singlebox:hover{
+    background: black;
+    color: #fff;
+}
+/*---------meditation page----------*/
+.sup{
+    height: 55vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/medita.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sup h1{
+    margin-top: 100px;
+    color: #fff;
+    font-family: Lucida , cursive;
+}
+/*-------tips for meditation---------*/
+.clip{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.art{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    border-radius: 4px;
+    background-color: #79dbd6;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition: .3s;
+}
+.music{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 6px solid #ddd;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 20px;
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+}
+.art:nth-child(1) .music{
+    background-image: url(images/11.jpeg);
+}
+.art:nth-child(2) .music{
+    background-image: url(images/22.jpeg);
+}
+.art:nth-child(3) .music{
+    background-image: url(images/33.jpeg);
+}
+.guide h2{
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Lucida , cursive;
+}
+.guide p{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.art:hover{
+    background: rgb(211, 136, 192);
+    color: #fff;
+}
+/*-------other 3 tips for meditating------*/
+.classes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.garden{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    border-radius: 4px;
+    background-color: #79dbd6;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition: .3s;
+}
+.tree{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 6px solid #ddd;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 20px;
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+}
+.garden:nth-child(1) .tree{
+    background-image: url(images/44.jpeg);
+}
+.garden:nth-child(2) .tree{
+    background-image: url(images/55.jpeg);
+}
+.garden:nth-child(3) .tree{
+    background-image: url(images/66.jpeg);
+}
+.ground h2{
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Lucida , cursive;
+}
+.ground p{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.garden:hover{
+    background: rgb(211, 136, 192);
+    color: #fff;
+}
+/*--------dietplan page---------*/
+.diet-main{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/dietmain.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.contdiet{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:white;
+}
+.contdiet h1{
+    font-size: 50px;
+    margin-top: 50px;
+    color: #fff;
+    font-family: Lucida , cursive;
+}
+.contdiet p{
+    margin: 20px auto;
+    font-weight: 50;
+    line-height: 25px;
+    font-size: 25px;
+    font-family: 'Yellowtail', cursive;
+}
+/*------types of diet-------*/
+.diet h1{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    font-family: Lucida , cursive;
+}
+.diet p{
+    text-align: center;
+    margin: 20px;
+    font-size: 35px;
+    font-family: 'Brush Script MT', cursive;
+}
+.dima{
+    top: 50%;
+    left: 50%;
+    width: 260px;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+}
+.dima img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.3);
+    transition: .5s;
+}
+/*--------Music page---------*/
+.musicmain{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/music1.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.musichead{
+    width:100%;
+    position: absolute;
+    top: 30%;
+}
+.leftmusic{
+    margin-left: 6%;
+}
+.leftmusic h1{
+    font-size: 90px;
+    color: #fff;
+    line-height: 110px;
+    text-align: left;
+}
+.rightmusic{
+    float: right;
+    margin-right: 6%;
+    margin-top: -200px;
+    display: flex;
+    align-items: center;
+}
+.rightmusic p{
+    font-size: 18px;
+    color: #737d80;
+    font-weight: 400;
+    margin-right: 15px;
+}
+/*feedback page*/
+.feedback{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/file.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.wrapper{
+    color: black;
+    font-size: 40px;
+    padding: 50px;
+    text-align: center;
+}
+form{
+    margin-left: 500px;
+    margin-top: 50px;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+.form-group label{
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.form-group input{
+    width: 320px;
+    padding: 10px;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 4px;
+}
+input.invalid{
+    border: 1px solid red;
+}
+.error-hint{
+    color: red;
+}
+hr{
+    height: 1px;
+    width: 500px;
+    background-color: rgb(211, 136, 192);
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.submit{
+    padding:10px;
+    font-size: 24px;
+    background: none;
+    border: 1px solid rgb(85, 84, 110);
+    border-radius: 10px;
+    color: black;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-size: 20px;
+}
+.submit:hover{
+    background-color: rgb(137, 188, 218);
+    border: black;
+    color: white;
+}
+.hidden{
+    display: none;
+}
+.thanks{
+    padding: 40px;
+    font-size: 32px;
+    text-align: center;
+}
